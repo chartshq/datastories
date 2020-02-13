@@ -1,0 +1,40 @@
+[
+    {
+        "name": "year",
+        "type": "dimension",
+        "subtype": "temporal",
+        "format": "%Y"
+    },
+    {
+        "name": "period",
+        "type": "dimension"
+    },
+    {
+        "name": "periodName",
+        "type": "dimension"
+    },
+    {
+        "name": "value",
+        "type": "measure"
+    },
+    {
+        "name": "sectorName",
+        "type": "dimension"
+    },
+    {
+        "name": "footnotesCode",
+        "type": "dimension"
+    },
+    {
+        "name": "footnotesText",
+        "type": "dimension"
+    },
+    {
+        "name": "change",
+        "type": "measure"
+    },
+    {
+        "name": "id",
+        "type": "measure"
+    }
+]

@@ -1,0 +1,363 @@
+#heading {
+    text-align: center;
+}
+a {
+    text-decoration: underline;
+}
+
+#heading-text {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+}
+
+#heading-authors {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.muze-layer-text text {
+    font-size: 16px;
+    fill: #333 !important;
+    fill-opacity: 0.9;
+}
+
+.muze-crossline {
+    stroke-dasharray: none;
+    stroke: rgb(153, 153, 153);
+    opacity: 0.2;
+    stroke-width: 10px;
+}
+
+#subtitle-container {
+    border-top: 1px solid #d1d1d1;
+    width: 52%;
+}
+
+#subtitle-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#subtitle-container p {
+    line-height: 25px;
+}
+
+#subtitle-jumpto-unemp {
+    color: #0080c3;
+    text-decoration: none;
+}
+
+#subtitle-jumpto-unemp:hover {
+    text-decoration: underline;
+}
+
+#unemployment-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#tooltip-date {
+    background: #666;
+    color: #fff;
+    font-weight: 600;
+    padding: 3px 6px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0.1px solid #464646;
+    margin-left: auto
+}
+
+#tooltip-heatmap {
+    color: #231f20;
+    padding: 3px 6px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto
+}
+
+#tooltip-unemp {
+    font-weight: 600;
+    color: #231f20;
+    font-weight: 600;
+    padding: 3px 6px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto
+}
+
+#tooltip-unemp-border {
+    color: #231f20;
+    font-weight: 600;
+    padding: 3px 6px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0.1px solid #464646;
+    margin-left: auto
+}
+
+#tooltip-selected {
+    color: #0079ae;
+    font-weight: 600;
+    padding: 3px 6px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 0.1px solid #464646;
+    margin-left: auto;
+    border-top-width:0;
+
+}
+
+#heatmap, #line {
+    margin: 2% 0;
+}
+
+.table {
+    margin-bottom: 2em;
+    margin-top: 25px;
+    background-color: #f3f3f3;
+    padding: 10px;
+}
+
+.table-info {
+    color: #333;
+    font-weight: 600;
+    font-size: 16px;
+    margin: 1% 6%;
+}
+
+#unemployment-charts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+#unemployment-charts::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1px;
+    background-color: #d1d1d1;
+    width: 200px;
+    left: 50%;
+    margin-left: -5%;
+}
+
+#unemployment-charts::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 1px;
+    background-color: #d1d1d1;
+    width: 200px;
+    left: 50%;
+    margin-left: -5%;
+}
+
+#unemployment-charts-container {
+    margin: 0 6.5%;
+}
+
+#header-author-link {
+    color: #0080c3;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.muze-tooltip-html-container {
+    margin: 0;
+}
+
+.muze-tooltip-box {
+    padding: 0;
+    border: none;
+}
+
+.muze-tooltip-content-container-highlightSummary {
+    border: none;
+}
+
+.muze-legend-components {
+    margin-left: 620px;
+}
+
+#table {
+    margin-bottom: 2em;
+    margin-top: 25px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    width: 100%;
+}
+
+.table-item-label {
+    color: #333;
+    text-align: center;
+    margin: 5px 1px;
+    font-size: 15px
+}
+
+.table-first-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.table-item-btn {
+    font-family: 'Hind', sans-serif;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    border-color: #E6E6E6;
+    display: inline-table;
+    /* width: 100px; */
+}
+
+.active, .table-item-btn:hover {
+    background-color: #0079ae;
+    color: white;
+    outline: none;
+}
+
+.button-black .active, .button-black .table-item-btn:hover {
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.table-second-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Hind', sans-serif;
+    color: #333;
+}
+
+.lineLayer {
+    stroke-width: 1px;
+}
+
+.lineLayerActive {
+    stroke-width: 3px;
+}
+
+.muze-ticks {
+    fill: #333333;
+    font-size: 14px;
+}
+
+.muze-title-cell {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5f5f5f;
+}
+.muze-title-container {
+    top: 68px;
+}
+.muze-layer-point{
+    fill-opacity: 0.7;
+    stroke: 'white'
+}
+
+#heatmap-point-chart .muze-layer-point {
+    fill-opacity: 1;
+}
+
+#heatmap-point-chart {
+    margin-left: 3%;
+    overflow: auto;
+}
+
+/* basic positioning */
+.static-legend { list-style: none; margin: 2px 0 2px 10px; padding-left: 3px; float: left;}
+.static-legend li { float: left; margin-right: 10px; }
+.static-legend span {float: left; width: 12px; height: 12px; margin: 3px; }
+/* your colors */
+.static-legend .always { background-color: #231e1f; }
+.static-legend .selected { background-color: #0079ae; }
+.static-legend .restAll { background-color:  #999999; }
+#static-legend-selected {
+    display: none;
+}
+#static-legend-restAll {
+    display: none;
+}
+.recession-check {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.muze-layer-text text {
+    font-size: 16px;
+    fill: #333 !important;
+    fill-opacity: 0.9;
+}
+
+.stroke-line-inactive {
+    stroke-width: 1px;
+}
+
+.stroke-line-active {
+    stroke-width: 3px;
+}
+
+.muze-ticks {
+    font-family: 'Hind', sans-serif;
+}
+
+.point-layer-stroke {
+    stroke: #E6E6E6;
+}
+.button-wrap-age, .button-wrap-gender, .button-wrap-race, .button-wrap-education  {
+    display: inline-table;
+}
+
+.button-wrap-age button{
+    width: 90px;
+}
+
+.button-wrap-gender button{
+    width: 100px;
+}
+
+.button-black button{
+    width: 110px;
+}
+
+.button-wrap-race button{
+    width: 110px;
+}
+
+.button-wrap-education button{
+    width: 130px;
+}
+
+.recession-checkbox-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+}

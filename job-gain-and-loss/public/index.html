@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <title>Job Market Tracker</title>
+    <script src="https://cdn.muzejs.org/lib/muze/core/latest/muze.js"></script>
+    <link rel="stylesheet" href="https://cdn.muzejs.org/lib/muze/core/latest/themes/muze.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> -->
+</head>
+<body>
+    <section id="heading">
+            <p id="heading-text">Track National Unemployment,</p>
+            <p id="heading-text">Job Gains and Job Losses</p>
+            <p id="heading-authors">
+            <span>By <a href="https://charts.com" target="_blank" id="header-author-link">Charts.com</a></span>
+            <span>Original <a href="https://graphics.wsj.com/job-market-tracker/" target="_blank" id="header-author-link">Wall Street Journal</a></span>
+        </p>
+    </section>
+
+    <section id="subtitle-container">
+        <div id="subtitle-heading">
+            <h3>
+                Winners and Losers: Job Gains and Losses
+            </h3>
+            <a id="subtitle-jumpto-unemp" href="#unemployment-charts">Jump to National Unemployment</a>
+        </div>
+        <p>Track the number of sectors gaining or losing jobs each month. Boxes are shaded based on percentage change from the previous month in each <i>sector's payrolls. </i></p>
+    </section>
+​
+    <section>
+        <div id="heatmap-point-chart"></div>
+    </section>
+​
+    <section id="unemployment-charts">
+        <div id="unemployment-charts-container">
+            <div id="unemployment-heading">
+                <h3>Jobs Come, Jobs Go: National Unemployment</h3>
+                <a id="subtitle-jumpto-unemp" href="#subtitle-heading">Jump to Job Gains/Losses</a>
+            </div>
+            <p>Track various national unemployment rates month by month since their earliest year with official data, seasonally adjusted</p>
+        </div>
+        
+        <div id="heatmap"></div>
+        <div id="heatmap1"></div>
+        <div id="line"></div>
+        <div id="line1"></div>
+        <div id="table">
+            <p class="table-info">Adjust both charts by selecting an unemployment rate</p>
+            <div class="table-first-row">
+                <div class="button-black">
+                    <p class="table-item-label">&nbsp;</p>
+                    <button class="table-item-btn active" value='unemp' >Overall</button>
+                </div>
+                <div class="button-wrap-gender button-wrap">
+                    <p class="table-item-label">Gender</p>
+                    <button class="table-item-btn" value='women'>Women</button>
+                    <button class="table-item-btn" value='men'>Men</button>
+                </div>
+                <div class="button-wrap-age button-wrap">
+                    <p class="table-item-label">Age, in years</p>
+                    <button class="table-item-btn" value='years16to24'>16-24</button>
+                    <button class="table-item-btn" value='years25to34'>25-34</button>
+                    <button class="table-item-btn" value='years35to44'>35-44</button>
+                    <button class="table-item-btn" value='years45to54'>45-54</button>
+                    <button class="table-item-btn" value='years55more'>55+</button>
+                </div>
+            </div>
+​
+            <div class="table-second-row">
+                <div class="button-wrap-race">
+                    <p class="table-item-label">Race/Ethnicity</p>
+                    <button class="table-item-btn" value='black'>Black</button>
+                    <button class="table-item-btn" value='hispanic'>Hispanic</button>
+                    <button class="table-item-btn" value='white'>White</button>
+                </div>
+                <div class="button-wrap-education">
+                    <p class="table-item-label">Education (age 25+)</p>
+                    <button class="table-item-btn" value='lessThanHS'>Less than H.S.</button>
+                    <button class="table-item-btn" value='hsGrad'>H.S. grad.</button>
+                    <button class="table-item-btn" value='someCollege'>Some college</button>
+                    <button class="table-item-btn" value='bachelors'>Bachelor's</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

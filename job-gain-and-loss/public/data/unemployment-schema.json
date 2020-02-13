@@ -1,0 +1,163 @@
+[{
+    "name": "date",
+    "type": "dimension",
+    "subtype": "temporal",
+    "format": "%m/%d/%Y",
+    "formatConfig": {
+        "type": "datetime"
+    }
+},{
+    "name": "unemp",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+}, {
+    "name": "years16to24",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+}, {
+    "name": "years25to34",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "years35to44",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+}, {
+    "name": "years45to54",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+}, {
+    "name": "years55more",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "white",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "black",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "hispanic",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "men",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "women",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "lessThanHS",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "hsGrad",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "bachelors",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "someCollege",
+    "type": "measure",
+    "subtype": "continuous",
+    "defAggFn": "max",
+    "formatConfig": {
+        "type": "numeric",
+        "subtype": "number"
+    }
+},{
+    "name": "recession",
+    "type": "dimension"
+},{
+    "name": "startDate",
+    "type": "dimension",
+    "subtype": "temporal",
+    "format": "%m/%d/%Y",
+    "formatConfig": {
+        "type": "datetime"
+    }
+},{
+    "name": "endDate",
+    "type": "dimension",
+    "subtype": "temporal",
+    "format": "%m/%d/%Y",
+    "formatConfig": {
+        "type": "datetime"
+    }
+}]
